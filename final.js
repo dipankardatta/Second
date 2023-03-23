@@ -159,12 +159,12 @@ function addItem(e) {
     name: newItemvalue,
     description: descriptionValue
   };
-  var users = JSON.parse(localStorage.getItem("users")) || [];
-  users.push(user);
+  var users = JSON.stringify(user);
   localStorage.setItem("users", JSON.stringify(users));
-   // Clear input fields
-   newItem.value = "";
-   description.value = "";
+  var users_deserial = JSON.parse(localStorage.getItem('users'));
+  console.log(users_deserial);
+
+  
 }
 
 // Remove item
