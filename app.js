@@ -1,1 +1,2 @@
-console.log('project1 ')
+
+console.log(localStorage.getItem('name'))
